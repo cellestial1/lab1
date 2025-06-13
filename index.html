@@ -20,6 +20,9 @@
       margin: 0;
       font-size: 2.5rem;
     }
+    h3 {
+      margin-top: 50%;
+    }
     .sections-container {
       display: flex;
       justify-content: space-evenly;
@@ -67,9 +70,11 @@
       background-color: rgba(0, 0, 0, 0.9);
       padding: 20px;
       box-sizing: border-box;
-      text-align: left;
+      text-align: center;
+      align-items: center;
       display: none;
     }
+
     .info.show {
       display: block;
       animation: slideIn 0.5s forwards;
@@ -96,30 +101,35 @@
   <div class="sections-container">
     <section class="sith section" id="sith-section">
       <h2>Ситхи</h2>
-      <img src="drevan.png" alt="Ситх" />
+      <img src="images/drevan.png" alt="Ситх" />
       <p>Ситхи следуют страсти и силе. Их путь — тьма, но и мощь.</p>
       <button class="more-btn" onclick="toggleInfo('sith')">Подробнее</button>
       <div class="info" id="sith-info">
         <h3>Сила Ситхов</h3>
-        <p>Ситхи черпают силу из эмоций, особенно из гнева и страха. Они верят, что через конфликт приходит рост и освобождение.</p>
+      <p><strong>Путь страсти:</strong> Ситхи верят, что эмоции — ключ к силе. Гнев, страх, страсть — всё это источники могущества, а не слабости.</p>
+      <p><strong>Конфликт — двигатель прогресса:</strong> Они утверждают, что только через борьбу можно достичь истинной силы и свободы. Учение Ситхов отрицает покорность и поощряет личностный рост через преодоление.</p>
+      <p><strong>Цель — власть:</strong> Конечной целью Ситха является контроль, как над собой, так и над окружающим миром. Власть приносит порядок, но этот порядок строится на страхе.</p>
+
         <button class="more-btn" onclick="toggleInfo('sith')">Назад</button>
       </div>
     </section>
 
     <section class="grey section">
       <h2>Серые Джедаи</h2>
-      <img src="midlrevan.png" alt="Серый Джедай" />
+      <img src="images/midlrevan.png" alt="Серый Джедай" />
       <p>Серые Джедаи идут своим путём, соблюдая баланс между Светом и Тьмой.</p>
     </section>
 
     <section class="jedi section" id="jedi-section">
       <h2>Джедаи</h2>
-      <img src="lrevan.png" alt="Джедай" />
+      <img src="images/lrevan.png" alt="Джедай" />
       <p>Джедаи защищают галактику, следуя Свету и дисциплине.</p>
       <button class="more-btn" onclick="toggleInfo('jedi')">Подробнее</button>
       <div class="info" id="jedi-info">
         <h3>Сила Джедаев</h3>
-        <p>Джедаи стремятся к внутреннему спокойствию, гармонии и равновесию. Они действуют в интересах всей галактики, избегая личной привязанности.</p>
+        <p><strong>Путь спокойствия:</strong> Джедаи ищут умиротворение, духовное равновесие и стремятся подавить личные страсти ради общего блага.</p>
+        <p><strong>Альтруизм:</strong> Служение другим, а не себе — основа философии Джедаев. Они отказываются от привязанностей, чтобы избежать страха потери, ведущего к Тьме.</p>
+        <p><strong>Орудие мира:</strong> Световой меч — не символ нападения, а последний рубеж защиты. Джедаи применяют Силу, чтобы лечить, защищать и направлять.</p>        
         <button class="more-btn" onclick="toggleInfo('jedi')">Назад</button>
       </div>
     </section>
